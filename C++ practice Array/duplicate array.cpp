@@ -9,6 +9,7 @@ int main()
         // int key=arr[i];
        int count=0;
         for(int j=i+1; j<8; ++j)
+        
         {
             if(arr[i]==arr[j] && arr[i]!=-1)
             {
