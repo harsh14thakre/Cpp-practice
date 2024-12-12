@@ -9,18 +9,18 @@ int main()
         int count=0;
         bool dup=false;
 
-        for(int j=0;j<8;++j)
+        for(int j=i+1;j<8;++j)
         {
             if(arr[i]==arr[j] && arr[i]!=-1)
             {   
                count++; 
-               dup=true;
+              dup=true;
                arr[j]=-1;
             }
         }
-        if(dup==true)
+        if(count>0)
         {
-           cout<<arr[i]<<"is repeated "<<"times\n";
+           cout<<arr[i]<<"is repeated "<<count<<"times\n";
         }
     }
 }
