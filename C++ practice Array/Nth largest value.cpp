@@ -6,7 +6,7 @@ int main()
     cout<<"Enter the value";
     cin>>k;
     int arr[]={10,20,30,40,50,60};
-    
+     
         for(int i=0; i<k; ++i)
         { int temp=0;
             for(int j=i+1; j<6; ++j)
