@@ -8,9 +8,12 @@ bool bp(string &str)
  for(int i=0;i<str.length();++i)
   {
       char ch=str[i];
-      if(ch=='(')  circle++;
-        else if(ch=='[')  square++;
-                else if(ch=='{')  curly++;
+      if(ch=='(') 
+       circle++;
+        else if(ch=='[') 
+         square++;
+                else if(ch=='{')  
+                curly++;
                 
     else if(ch==')'){
         if(circle==0)
