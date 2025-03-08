@@ -2,16 +2,21 @@
 using namespace std;
 int main()
 {
-    int arr[]={10,20,13,15,16};
-    
-    for(int i=0; i<5; ++i)
+    int arr[]={1,2,1,3,4,1,2,3};
+    for(int i=0;  i<8; ++i)
     {
-        if(arr[i+1]-arr[i]>1)
+        bool dup= false;
+        for(int j=i+1; j<8; ++j)
         {
-            for(int j=arr[i]+1;j<arr[i+1];++j)
+            if(arr[i]==arr[j] && arr[i]!=1)
             {
-                cout<<j<<endl;
+                dup=true;
+                arr[j]=-1;
             }
+        }
+        if(dup==false && arr[1]!=-1)
+        {
+            cout<<arr[i]<<"is unique\n";
         }
     }
 }

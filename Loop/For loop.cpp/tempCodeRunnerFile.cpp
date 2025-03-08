@@ -1,4 +1,4 @@
-// #include<iostream>
+#include<iostream>
 // using namespace std;
 // int main()
 // {
@@ -7,9 +7,5 @@
 //     {
 //         sum=sum+i;
 //     }
-//     cout<<sum;
+//     cout<<i;
 // }
-
-
-
-
