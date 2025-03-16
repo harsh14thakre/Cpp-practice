@@ -13,15 +13,22 @@ int main()
 
     for(int i=0; i<s1.length(); ++i)
     {
-        bool check=true;
-        for(int j=0; i<s1.length(); ++i)
+        bool check=false;
+        for(int j=0; j<s1.length(); ++j)
         {
-          if(s1[i]==s2[j])
+          if(s2[i]==s1[j])
           {
             s1[j]='#';
-            check=false;
+            check=true;
+            break;
           }
         }
+        if(check==false)
+        {
+            cout<<"Not an anagram";
+            return 0;
+        }
     }
+    cout<<"Anagram";
 
 }
